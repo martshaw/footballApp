@@ -1,0 +1,104 @@
+{
+  "name": "Mart-Footy",
+  "version": "0.0.1",
+  "description": "A stab at trying to display premiere league clubs form.",
+  "main": "app.js",
+  "browserify": {
+    "transform": [
+      "browserify-shim",
+      "hbsfy"
+    ]
+  },
+  "browserify-shim": {
+    "plugin": {
+      "exports": "plugin",
+      "depends": [
+        "jquery:$"
+      ]
+    }
+  },
+  "devDependencies": {
+    "ampersand-app": "^1.0.4",
+    "ampersand-model": "^6.0.1",
+    "ampersand-rest-collection": "^5.0.0",
+    "ampersand-view": "^8.0.1",
+    "assert": "^1.3.0",
+    "before": "0.0.1",
+    "blanket": "^1.1.7",
+    "browser-sync": "^2.8.2",
+    "browserify": "^9.0.3",
+    "browserify-shim": "^3.8.2",
+    "chai": "^3.2.0",
+    "del": "^1.2.1",
+    "eslint": "^1.3.0",
+    "glob": "^5.0.14",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-blanket-mocha": "0.0.4",
+    "gulp-changed": "^1.1.1",
+    "gulp-csso": "^1.0.0",
+    "gulp-filesize": "0.0.6",
+    "gulp-iconfont": "^1.0.0",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-minify-css": "~0.5.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plato": "^1.0.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "~1.3.3",
+    "gulp-sourcemaps": "^1.5.0",
+    "gulp-swig": "^0.7.4",
+    "gulp-uglify": "^1.4.0",
+    "gulp-util": "^3.0.4",
+    "handlebars": "^3.0.0",
+    "hbsfy": "~2.2.1",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.9",
+    "karma-browserify": "^4.3.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-coverage": "^0.5.0",
+    "karma-eslint": "^2.0.1",
+    "karma-jasmine": "^0.3.6",
+    "karma-mocha": "^0.2.0",
+    "karma-notification-reporter": "0.0.1",
+    "karma-nyan-reporter": "0.0.51",
+    "karma-osx-reporter": "^0.2.0",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "karma-safari-launcher": "^0.1.1",
+    "karma-sinon": "^1.0.4",
+    "karma-sinon-chai": "^0.3.0",
+    "lodash": "^3.10.1",
+    "merge-stream": "^0.1.7",
+    "phantomjs": "^1.9.18",
+    "plato": "^1.5.0",
+    "pretty-hrtime": "~1.0.0",
+    "process-nextick-args": "^1.0.2",
+    "request": "^2.61.0",
+    "require-dir": "^0.1.0",
+    "should": "^7.1.0",
+    "sinon": "^1.16.1",
+    "uglify-save-license": "^0.4.1",
+    "vinyl-source-stream": "~1.0.0",
+    "watchify": "^2.4.0"
+  },
+  "dependencies": {
+    "babel": "^5.8.23",
+    "babel-core": "^5.8.23",
+    "backbone": "^1.2.2",
+    "jquery": "~2.1.0",
+    "node-notifier": "^4.2.3"
+  },
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/martshaw/football/"
+  },
+  "keywords": [
+    "javascript",
+    "football"
+  ],
+  "author": "Mart Shaw",
+  "license": "ISC"
+}
